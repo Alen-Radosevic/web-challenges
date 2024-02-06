@@ -63,20 +63,20 @@ a {
 }
 
 /* 3. These styles should apply to all external links (you can use the attribute selector) */
-a [target="_blank"] {
+a [href*="http"] {
   outline: 2px dashed red;
   color: #ff8000;
 }
 
 /* 4. These styles should apply to all links in the main navigation */
-main a {
+nav a {
   outline: 2px dashed red;
   color: #ffffff;
   text-decoration: none;
 }
 
 /* 5. These styles should apply to the main navigation link corresponding to the current page */
-.current {
+nav .current {
   outline: 2px dashed red;
   color: #22e781;
 }
@@ -109,33 +109,33 @@ p,
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-footer .text {
+footer p {
   outline: 2px dashed red;
   color: #ffffff;
 }
 
 /* 11. These styles should apply to all lists in the main content */
-main .list {
+.list {
   outline: 2px dashed red;
   padding: 1rem 2rem;
   background: #caced2;
 }
 
 /* 12. These styles should apply to all list items */
-.list {
+li {
   outline: 2px dashed red;
   margin: 0 0 0.5rem 0;
 }
 
 /* 13. These styles should apply to all nested lists */
-ul > li {
-  outline: 2px dashed red;
+.list ul {
+  outline: 2px dashed rgb(46, 18, 185);
   margin: 0.5rem 0 0 0;
   background-color: #f1f1f1;
 }
 
 /* 14. These styles should apply to all list items in nested lists */
-li > .list > li {
+.list ul li {
   outline: 2px dashed red;
   margin: 0;
   color: #2673bb;
