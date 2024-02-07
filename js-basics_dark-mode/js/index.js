@@ -1,10 +1,10 @@
 console.clear();
 
-const bodyElement = document.querySelector('[data-js="body"]');
+const bodyElement = document.querySelector('["data-js="body"]');
 
-const darkMode = document.querySelector('[data-js="dark-mode-button"]');
-const lightMode = document.querySelector('[data-js="light-mode-button"]');
-const toggleMode = document.querySelector('[data-js="toggle-button"]');
+const darkMode = document.querySelector('["data-js="dark-mode-button"]');
+const lightMode = document.querySelector('["data-js="light-mode-button"]');
+const toggleMode = document.querySelector('["data-js="toggle-button"]');
 
 darkMode.addEventListener("click", () => {
   bodyElement.classList.remove("button--light");
