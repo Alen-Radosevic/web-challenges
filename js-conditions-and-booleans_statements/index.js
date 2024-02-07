@@ -20,30 +20,35 @@ if (number % 2 == 0) {
 
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
+let price;
 
 if (numberOfHotdogs < 5) {
-  let price = 2 * numberOfHotdogs;
-  console.log(price);
+  price = 2 * numberOfHotdogs;
 } else if (numberOfHotdogs < 100) {
-  let price = 1.5 * numberOfHotdogs;
-  console.log(price);
+  price = 1.5 * numberOfHotdogs;
 } else if (numberOfHotdogs < 1000000) {
-  let price = 1 * numberOfHotdogs;
-  console.log(price);
+  price = 1 * numberOfHotdogs;
 } else if (numberOfHotdogs > 100000) {
-  let price = 0.5 * numberOfHotdogs;
-  console.log(price);
+  price = 0.5 * numberOfHotdogs;
 }
+console.log(price);
+
 // Part 4: Daytime
 const currentHour = 12;
+/* if (currentHour < 17) {
+  console.log("Still need to learn...");
+} else {
+  console.log("Partytime!!!");
+} */
 
-const statement = "";
+const statement = currentHour < 17 ? "Still need to learn..." : "Partytime!!!";
 
 console.log(statement);
 
 // Part 5: Greeting
 const name = "Archibald";
-
-const greeting = "Hello " + "//enter your code here" + "!";
+const coach = "Mark";
+const isCoach = name === coach ? "Coach" : name;
+const greeting = "Hello " + isCoach + "!";
 
 console.log(greeting);
