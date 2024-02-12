@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const theBookTitle = "Title: The Lord of the Javascript";
+const author = "Author: Mario";
+const rating = "Rating: 4.2";
+let number = "Sales: 120";
 // --^-- write your code here --^--
 
 /*
@@ -25,7 +28,13 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.log(theBookTitle);
+console.log(author);
+console.log(rating);
 
+number = 120;
+number++;
+console.log(number);
 // --^-- write your code here --^--
 
 /*
