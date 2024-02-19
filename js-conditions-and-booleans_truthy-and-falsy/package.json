@@ -1,7 +1,7 @@
 {
-  "name": "js-basics_dark-mode",
+  "name": "js-conditions-and-booleans_truthy-and-falsy",
   "version": "0.0.0-unreleased",
-  "description": "",
+  "description": "Static HTML template with CSS and JS",
   "main": "index.html",
   "scripts": {
     "lint": "npx -y eslint@latest .",
