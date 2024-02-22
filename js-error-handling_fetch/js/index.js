@@ -13,7 +13,7 @@ async function getUser(url) {
     return json.data;
   } catch (error) {
     console.error(error);
-    alert("There`s a Network error!");
+    alert("Network error!");
     return null;
   }
 }
@@ -28,7 +28,7 @@ document.querySelectorAll("button[data-url]").forEach((button) =>
     `;
     } catch (error) {
       console.error(error);
-      alert("There`s a network error!");
+      alert("Network error!");
     }
   })
 );
