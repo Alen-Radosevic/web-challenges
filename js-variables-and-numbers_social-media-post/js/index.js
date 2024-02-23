@@ -14,7 +14,7 @@ const title = "Social Media Post";
 const text = "Welcome to my Post";
 let numberOfLikes = 42;
 const user = "Alen";
-const isReported = "true";
+const isReported = true;
 // --^-- write your code here --^--
 
 /*
@@ -24,7 +24,10 @@ const isReported = "true";
 // --v-- write your code here --v--
 console.log(title);
 console.log(text);
-console.log(numberOfLikes++);
+console.log(numberOfLikes);
 console.log(user);
 console.log(isReported);
+
+numberOfLikes++;
+console.log(numberOfLikes);
 // --^-- write your code here --^--
