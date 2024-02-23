@@ -11,9 +11,8 @@ console.clear();
 
 // --v-- write your code here --v--
 const title = "Social Media Post";
-const text = "Welcome to this exercise";
-const textParagraph = "Please open the console before you start.";
-let numberLikes = 50;
+const text = "Welcome to my Post";
+let numberOfLikes = 42;
 const user = "Alen";
 const isReported = "true";
 // --^-- write your code here --^--
@@ -25,7 +24,7 @@ const isReported = "true";
 // --v-- write your code here --v--
 console.log(title);
 console.log(text);
-console.log(numberLikes++);
+console.log(numberOfLikes++);
 console.log(user);
 console.log(isReported);
 // --^-- write your code here --^--
