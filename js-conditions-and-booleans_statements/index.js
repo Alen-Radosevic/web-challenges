@@ -52,3 +52,11 @@ const isCoach = name === coach ? "Coach" : name;
 const greeting = "Hello " + isCoach + "!";
 
 console.log(greeting);
+
+//druga verzija
+/* const name = "Archibald";
+const coach = "Max";
+
+const greeting = "Hello " + (name === coach ? "coach" : name) + "!";
+
+console.log(greeting); */
