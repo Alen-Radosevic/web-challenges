@@ -48,31 +48,5 @@ function getDayColor() {
   }
 }
 
-/* 
-function getDayColor(
-  monday,
-  tuesday,
-  wednesday,
-  thrirstday,
-  friday,
-  saturday,
-  sunday
-) {
-  // Code here
-  if (currentWeekDay === 1) {
-    return "darkgray";
-  } else if (
-    currentWeekDay === 2 ||
-    currentWeekDay === 3 ||
-    currentWeekDay === 4 ||
-    currentWeekDay === 5
-  ) {
-    return "lightblue";
-  } else currentWeekDay === 6 || currentWeekDay === 7;
-
-  {
-    return "hotpink";
-  }
-} */
 display.textContent = getGreeting();
 document.body.style.backgroundColor = getDayColor();
