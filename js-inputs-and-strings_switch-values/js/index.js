@@ -14,9 +14,7 @@ Hint: the HTML entity for the switch button is: &updownarrow
 */
 
 const firstInput = document.querySelector('[data-js="first-input"]');
-
 const secondInput = document.querySelector("#second-input");
-
 const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
 const lowercaseButton = document.querySelector('[data-js="button-lowercase"]');
 const switchButton = document.querySelector('[data-js="button-switch"]');

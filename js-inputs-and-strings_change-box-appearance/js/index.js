@@ -22,3 +22,5 @@ const inputRadius = document.querySelector('[data-js="input-radius"]');
 const inputRotation = document.querySelector('[data-js="input-rotation"]');
 
 const box = document.querySelector('[data-js="box"]');
+
+box.addEventListener(() => {});

@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
   clickNum++;
 
   if (clickNum === 1) {
-    secondInput.value = firstInput.value;
+    secondInput = firstInput;
   } else if (clickNum === 2) {
     secondInput.value = firstInput.value.toUpperCase();
   } else {
