@@ -5,11 +5,15 @@ const form = document.querySelector('[data-js="form"]');
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-
-  console.log(data);
+  const form = new FormData(event.target);
+  const formData = Object.fromEntries(form);
+  console.log(formData);
 
   event.target.elements.firstName.focus();
+
+  const ageValue = event.target.elements.age.value;
+  const badnessValue = event.target.elements.badness.value;
+
+  console.log(parseInt(ageValue, 10) + parseInt(badnessValue, 10));
   event.target.reset();
 });
