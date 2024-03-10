@@ -10,7 +10,7 @@ const price = "149,99 €";
 const imageSrc =
   "https://unsplash.com/photos/3VOTHTrE614/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NTM3NTA2&force=true&w=640";
 
-const secondProduct = (
+const newProduct = `
   <article class="product">
     <div class="product__body">
       <div class="product__text-container">
@@ -20,10 +20,10 @@ const secondProduct = (
           <li class="product__category">${category2}</li>
           <li class="product__category">${category3}</li>
         </ul>
-        <p class="product__description">description</p>
+        <p class="product__description">${description}</p>
       </div>
       <div class="product__image-container">
-        <img class="product__image" src="${imageSrc}" alt="${name}" />
+        <img class="product__image" src=${imageSrc} alt="" />
       </div>
     </div>
     <footer class="product__footer">
@@ -33,12 +33,12 @@ const secondProduct = (
       </button>
     </footer>
   </article>
-);
-document.body.innerHTML += secondProduct;
+`;
 
-const buyButtons = document.querySelectorAll(".product__buy-button");
-const buyButton2 = Array.from(buyButtons)[1];
+document.body.innerHTML += newProduct;
 
+const buyButton = document.querySelectorAll(".product__buy-button");
+const buyButton2 = Array.from(buyButton)[1];
 buyButton2.addEventListener("click", () => {
-  console.log("secondProduct: ${name}, Price: ${price}");
+  console.log(`product name: ${name}, price ${price}`);
 });
