@@ -19,8 +19,6 @@ const colors = [
   "#A5A5A5",
 ];
 
-const body = document.querySelector("body");
-
 colors.forEach((color) => {
   const colorElement = document.createElement("div");
   colorElement.classList.add("color-box");
