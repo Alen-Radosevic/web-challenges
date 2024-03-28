@@ -92,15 +92,7 @@ console.log(employeesSortedByAge);
 // Hint use toSorted()
 
 const employeesSortedByLastName = employees.toSorted((a, b) => {
-  const nameA = a.lastName.toLowerCase();
-  const nameB = b.firstName.toLowerCase();
-  if (nameA < nameB) {
-    return -1;
-  } else if (nameA > nameB) {
-    return 1;
-  } else {
-    return 0;
-  }
+  return b.lastName.toLowerCase().localeCompare(a.lastName.toLowerCase());
 });
 
 console.log(employeesSortedByLastName);
