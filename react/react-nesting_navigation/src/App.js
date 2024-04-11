@@ -11,9 +11,9 @@ export default function App() {
       <Header>
         <Logo />
         <Navigation>
-          <Link href="#home">Home</Link>
-          <Link href="#about">About</Link>
-          <Link href="#impressum">Impressum</Link>
+          <Link propHref="#home">Home</Link>
+          <Link propHref="#about">About</Link>
+          <Link propHref="#impressum">Impressum</Link>
         </Navigation>
         <Avatar />
       </Header>
