@@ -31,6 +31,8 @@ export default function App() {
       ...animals,
       { name: newAnimal.name, emoji: newAnimal.emoji, id: uid() },
     ]);
+
+    setAnimals([...animals, { id: uid(), ...newAnimal }]);
   }
 
   return (
