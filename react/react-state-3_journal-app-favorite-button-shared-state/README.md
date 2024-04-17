@@ -33,7 +33,7 @@ Great, the favorite button can now inform via an exposed event, which entry shou
 
 Locate the component that renders a single entry including the favorite button. Here it's `Entry`.
 
-- In this component accept the three props too: `onToggleFavorite`, `isFavorite`, `id`.
+- In this component accept the three props too: `isFavorite`, `isFavorite`, `id`.
 - Pass all three props to the `FavoriteButton` component.
 
 Locate the component that renders the list of all entries. Here it's `EntrySection`.
