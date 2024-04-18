@@ -13,7 +13,7 @@ export default function Counter() {
           className="counter__button"
           aria-label="increment count"
           onClick={() => {
-            setCount(count + 10);
+            setCount(count + 1);
           }}
         >
           +
@@ -23,7 +23,7 @@ export default function Counter() {
           className="counter__button"
           aria-label="decrement count"
           onClick={() => {
-            setCount(count - 10);
+            setCount(count - 1);
           }}
         >
           -
@@ -32,3 +32,4 @@ export default function Counter() {
     </div>
   );
 }
+//

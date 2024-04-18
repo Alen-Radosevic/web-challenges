@@ -41,7 +41,7 @@ function App() {
   const [entries, setEntries] = useLocalStorageState("entries", {
     defaultValue: initialEntries,
   });
-  const [filter, setFilter] = useState("all"); // "all" or "favorites"
+  const [filter, setFilter] = useState("favotites"); // "all" or "favorites"
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {

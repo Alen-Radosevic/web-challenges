@@ -18,7 +18,8 @@ export default function App() {
     setHoliday(holidayInput);
     setCode(codeInput);
     setDate(dateInput);
-    // setFormData({ holiday: holidayInput, code: codeInput, date: dateInput });
+
+    // setFormData({ holiday: holidayInput, code: codeInput, date: dateInputt });
   }
 
   return (

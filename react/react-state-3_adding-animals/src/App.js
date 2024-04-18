@@ -29,7 +29,7 @@ export default function App() {
     // console.log(newAnimal);
     setAnimals([
       ...animals,
-      { name: newAnimal.name, emoji: newAnimal.emoji, id: uid() },
+      { id: uid(), name: newAnimal.name, emoji: newAnimal.emoji },
     ]);
 
     // setAnimals([...animals, { id: uid(), ...newAnimal }]);
