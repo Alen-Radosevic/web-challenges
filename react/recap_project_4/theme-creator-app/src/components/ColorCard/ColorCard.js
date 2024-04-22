@@ -1,14 +1,14 @@
-import classes from "./ColorCard.module.css";
+import "./ColorCard.css";
 
 function ColorCard({ color }) {
   return (
-    <li className={classes["color-card"]}>
-      <div className={classes["section-left"]}>
+    <li className="color-card">
+      <div className="section-left">
         <h3>{color.role}</h3>
         <p>{color.value}</p>
       </div>
       <div
-        className={classes["section-right"]}
+        className="section-right"
         style={{ backgroundColor: color.value }}
       ></div>
     </li>

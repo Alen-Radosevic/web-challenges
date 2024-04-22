@@ -5,9 +5,8 @@ li {
   list-style: none;
 }
 ul {
-  padding-left: 0;
 }
 
 .main-container {
-  margin: 30px;
+  /* margin: 30px; */
 }
