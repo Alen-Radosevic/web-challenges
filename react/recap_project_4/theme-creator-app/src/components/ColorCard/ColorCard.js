@@ -1,6 +1,6 @@
 import "./ColorCard.css";
 
-function ColorCard({ color }) {
+export default function ColorCard({ color }) {
   return (
     <li className="color-card">
       <div className="section-left">
@@ -14,5 +14,3 @@ function ColorCard({ color }) {
     </li>
   );
 }
-
-export default ColorCard;

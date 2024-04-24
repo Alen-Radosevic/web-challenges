@@ -1,12 +1,10 @@
 .header {
   margin: 25px;
+  background-color: rgb(182, 178, 178);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
 }
 li {
   list-style: none;
-}
-ul {
-}
-
-.main-container {
-  /* margin: 30px; */
 }

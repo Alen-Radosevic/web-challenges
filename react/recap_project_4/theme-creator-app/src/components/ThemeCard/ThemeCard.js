@@ -1,12 +1,10 @@
 import ColorCard from "../ColorCard/ColorCard";
-import classes from "./ThemeCard.module.css";
 
 function ThemeCard({ theme }) {
-  console.log(theme);
   return (
-    <li className={classes["theme-card"]}>
+    <li>
       <h2>{theme.name}</h2>
-      <ul className={classes["card-list"]}>
+      <ul>
         {theme.colors.map((color) => (
           <ColorCard color={color} key={color.value} />
         ))}

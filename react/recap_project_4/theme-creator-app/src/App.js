@@ -3,7 +3,6 @@ import ThemeCard from "./components/ThemeCard/ThemeCard.js";
 import { themes } from "./db.js";
 
 function App() {
-  // const theme = themes(0);
   return (
     <>
       <header className="header">
