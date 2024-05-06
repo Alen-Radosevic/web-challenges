@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navigation({ currentSlug, cities }) {
   const index = cities.findIndex((city) => city.slug === currentSlug);
   const prevCity = index > 0 ? cities[index - 1] : null;
-  const nextCity = index < cities.lenght - 1 ? cities[index + 1] : null;
+  const nextCity = index < cities.length - 1 ? cities[index + 1] : null;
 
   return (
     <>
