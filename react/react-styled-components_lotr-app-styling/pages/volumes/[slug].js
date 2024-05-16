@@ -2,6 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { volumes } from "../../lib/data";
+import styled from "styled-components";
+import ArrowLeft from "../../icons/arrow-left.svg";
+import ArrowRight from "../../icons/arrow-right.svg";
+import ChevronLeft from "../../icons/chevron-left.svg";
+
+const StyledDiv = styled.div`
+  background-color: ${({ $backgroundColor }) => $backgroundColor};
+`;
+
+const StyledH1 = styled.h1`
+  color: var(--color-clouds);
+  font: var(--font-headline-1);
+`;
+
+const StyledP = styled.p`
+  color: var(--color-smoke);
+`;
+
+const StyledListItem = styled.li`
+  color: var(--color-smoke);
+  font-family: serif;
+  font: var(--font-caption);
+`;
+
+const StyledLink = styled(Link)`
+  color: var(--color-clouds);
+  /* color: unset; */
+`;
 
 export default function VolumeDetail() {
   const router = useRouter();
@@ -17,40 +45,45 @@ export default function VolumeDetail() {
     return null;
   }
 
-  const { title, description, cover, books } = volume;
+  const { title, description, cover, books, color } = volume;
 
   return (
     <>
-      <Link href="/volumes">← All Volumes</Link>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <ul>
-        {books.map(({ ordinal, title }) => (
-          <li key={title}>
-            {ordinal}: <strong>{title}</strong>
-          </li>
-        ))}
-      </ul>
-      <Image
-        src={cover}
-        alt={`Cover image of ${title}`}
-        width={140}
-        height={230}
-      />
-      {previousVolume ? (
-        <div>
-          <Link href={`/volumes/${previousVolume.slug}`}>
-            ← Previous Volume: {previousVolume.title}
-          </Link>
-        </div>
-      ) : null}
-      {nextVolume ? (
-        <div>
-          <Link href={`/volumes/${nextVolume.slug}`}>
-            Next Volume: {nextVolume.title} →
-          </Link>
-        </div>
-      ) : null}
+      <StyledDiv $backgroundColor={color}>
+        <StyledLink href="/volumes">
+          <ChevronLeft /> All Volumes
+        </StyledLink>
+        <StyledH1>{title}</StyledH1>
+        <StyledP>{description}</StyledP>
+        <ul>
+          {books.map(({ ordinal, title }) => (
+            <StyledListItem key={title}>
+              {ordinal}: <strong>{title}</strong>
+            </StyledListItem>
+          ))}
+        </ul>
+        <Image
+          src={cover}
+          alt={`Cover image of ${title}`}
+          width={140}
+          height={230}
+        />
+        {previousVolume ? (
+          <div>
+            <StyledLink href={`/volumes/${previousVolume.slug}`}>
+              <ArrowLeft />
+              Previous Volume: {previousVolume.title}
+            </StyledLink>
+          </div>
+        ) : null}
+        {nextVolume ? (
+          <div>
+            <StyledLink href={`/volumes/${nextVolume.slug}`}>
+              Next Volume: {nextVolume.title} <ArrowRight />
+            </StyledLink>
+          </div>
+        ) : null}
+      </StyledDiv>
     </>
   );
 }
