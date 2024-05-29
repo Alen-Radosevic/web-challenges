@@ -8,7 +8,6 @@ export const server = createServer((request, response) => {
   const age = chance.age();
   const profession = chance.profession();
 
-  response.status = 200;
   response.end(
     `Hello, my name is ${name} and I am ${age} years old. I am a ${profession}.`
   );
